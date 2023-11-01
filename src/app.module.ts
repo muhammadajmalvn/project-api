@@ -8,11 +8,11 @@ import { UserModule } from './modules/user/user/user.module';
 @Module({
   imports: [TypeOrmModule.forRoot({
     type: 'mysql',
-    host:'localhost',
+    host:'mydb.cgierxxflbsf.ap-south-1.rds.amazonaws.com',
     port:3306,
-    username:'ajmal',
-    password:'Ajmal@9995',
-    database:'lottery',
+    username:'admin',
+    password:'ajmal123',
+    database:'defaultdb',
     entities:[User],
     synchronize:true,
   }),
