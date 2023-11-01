@@ -6,7 +6,7 @@ async function bootstrap() {
   await app.listen(4000);
 
   app.enableCors({
-    origin: 'http://localhost:3000',
+    origin: `${process.env.FRONTEND_URL}`,
     credentials: true,            //access-control-allow-credentials:true
   });
 }
